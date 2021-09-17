@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        
+        
+        <style>
+         body {
+		background: fixed;
+        background-image:url(biblioteca.jpg); 
+		background-color:#000;
+		background-repeat: no-repeat;
+		background-size: cover;	
+        }
+        .doc{
+        display: flex;
+        flex-flow: column wrap;
+        width: 99vw;
+        height: 79vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background:  #000000;
+        opacity: 0.7;
+        
+        }
+        .doc1{
+        display: initial;
+        flex-flow: column wrap;
+        width: 47vw;
+        height: 59vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+        padding: 20px;
+        }
+       
+        .doc1:nth-child(1):hover{
+           box-shadow: 0px 15px 20px 0px #1877f2; 
+		   
+        }
+		
+        .doc2{
+        display: initial;
+        flex-flow: column wrap;
+        width: 47vw;
+        height: 59vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+        padding: 20px;
+        }
+        .doc2:nth-child(2):hover{
+           box-shadow: 0px 15px 20px 0px #c32aa3; 
+        }
+        .label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+        }
+        input,label {
+            margin: .4rem 0;
+        }
+        .label1 {
+        display: inline;
+        font: 1rem 'Fira Sans', sans-serif;
+        }
+        input,label {
+            margin: .9rem 0;
+        }
+        
+        
+      .f{
+            background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;
+        }
+       
+        .icono1{
+            width: 55px;
+            height: 55px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono1:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #1877f2;
+        }
+        .fa-facebook-f{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #1877f2);
+        }
+        /*instagram*/
+        .f2{
+            background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;    
+        }
+       
+        .icono2{
+            width: 65px;
+            height: 65px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono2:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #c32aa3;
+        }
+        .fa-instagram{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #c32aa3);
+        }
+        /*twitter*/
+        .f3{
+           background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;
+        }
+       
+        .icono3{
+            width: 65px;
+            height: 65px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono3:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #DFDF0F;
+        }
+        .fa-twitter{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #DFDF0F);
+        }
+        
+        .boton {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+        }
+        .boton:nth-child(1n):hover{
+           box-shadow: 10px 10px 10px 10px #FFFFFF; 
+        }
+		.pini:nth-child(1n):hover{
+		
+		   color: #060008;
+            filter: drop-shadow(25px 25px 25px #060008);
+		   
+		   
+        }
+       
+        
+       </style>
+    </head>
+
+    <body >
+       <P align="center" class="pini" style="font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">BIENVENIDO A SU BIBILIOTECA</P>
+	   
+             <div aling = "center" class="doc"  >
+			 			 
+                  <div class="doc1">                     
+                     <h1 align="center" class="c" style="  font-weight: bold; font-size: 62px; color: #FFFFFF ; font-family: TATTI;">Iniciar Sesion</h1> 
+					 <div>
+					  <form action="validar.php" method="POST" >
+					 <label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b>Usuario :</b></label>
+					  <input type="text" placeholder="Ingrese su Usuario" name="usuario" required>
+                           <label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b>Contraseña :</b></label> 
+                               <input type="password" placeholder="Ingrese su Contraseña" name="pass" required>
+                           </div>
+						<input type="checkbox"><label class="check" for="checkbox" style="font-weight: bold; color: #FFFFFF ;" >Recordarme!</label>
+						<br>
+						<button type="submit" class="boton" style=" font-size: 29px; color: #FFFFFF; font-family: dirtyoldtown;" > Ingresar </a></button>
+																	
+                       </form>                       
+                           <h3 align="center" class="c" style="  font-weight: bold; font-size: 48px; color: #FFFFFF ; font-family: TATTI;">Ó Ingrese con Redes sociales</h3> 
+                          
+						  <div class = "q">
+                           <div class = "f">
+                               <div class="icono1">
+                                   <i align="center" class="fab fa-facebook-f fa-2x" size="100"> </i>
+                               </div>
+                           </div>
+                           
+                           <div class = "f2">
+                               <div class="icono2">
+                                   <i align="center" class="fab fa-instagram fa-2x"> </i>
+                               </div>
+                           </div>
+                           <div class = "f3">
+                               <div class="icono3">
+                                   <i align="center" class="fab fa-twitter fa-2x"> </i>
+                               </div>
+                           </div>
+						  </div>
+                                                           
+                 </div>
+				 
+                 
+                 <div class="doc2" id="doc2">
+                     
+                     <h2 align="center" class="c" style="  font-weight: bold; font-size: 62px; color: #FFFFFF ; font-family: TATTI;">Registrarse</h2> 
+                     <label align= "center" for="uname" style="font-weight: bold; font-size: 40px; color: #FFFFFF ;"><b>Nombre Completo       </b></label>
+                     <input type="text" placeholder="Ingrese Nombre" name="uname" required style="WIDTH: 30%;" size="38"><br>
+					 <br>
+                     <label for="uname" style="font-weight: bold; font-size: 40px; color: #FFFFFF ;"><b>Correo Electronico       </b></label>
+                     <input type="text" placeholder="Ingrese Email" name="uname" required style="WIDTH: 30%;" size="38"><br>
+					 <br>
+                     <label for="uname" style="font-weight: bold; font-size: 40px; color: #FFFFFF ;"><b>Ingrese Contraseña       </b></label>
+                     <input type="password" placeholder="Contraseña" name="uname" required style="WIDTH: 30%;" size="38"><br>
+					 <br>
+                     <label for="uname" style="font-weight: bold; font-size: 40px; color: #FFFFFF ;"><b>Repetir Contraseña       </b></label>
+                     <input type="password" placeholder="Contraseña" name="uname" required style="WIDTH: 30%;" size="38">
+                     <form action="conn_log.php" method="POST" > 
+                         <br>
+                         <br>
+                       <button type="submit" class="boton" style=" font-size: 29px; color: #FFFFFF; font-family: dirtyoldtown;" >Registrarse</button>
+                     </form>
+                     
+                         
+                 </div>
+                     
+                 
+                 
+             </div>
+       
+
+        
+        
+    </body>
+</html>

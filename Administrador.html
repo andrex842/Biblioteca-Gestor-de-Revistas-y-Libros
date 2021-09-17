@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        
+        <title>Administrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        
+        
+        <style>
+         body {
+		background: fixed;
+        background-image:url(biblioteca.jpg); 
+		background-color:#000;
+		background-repeat: no-repeat;
+		background-size: cover;	
+        }
+		.c{
+		
+		
+		border-bottom-style:double;
+		border-bottom-color: #D5DBDB;
+		opacity: 0,9;
+		}
+        .doc{
+        display: flex;
+        flex-flow: column wrap;
+        width: 99vw;
+        height: 79vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background:  #000000;
+        opacity: 0.6;
+        
+        }
+        .doc1{
+		border: 2 px;
+        display: initial;
+        flex-flow: column wrap;
+        width: 30vw;
+        height: 79vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+		border: 1px solid #D5DBDB;
+		
+       
+        }
+       
+        .doc1:nth-child(1):hover{
+           box-shadow: 0px 15px 20px 0px #1877f2; 
+        }
+        .doc2{
+		border: 2 px;
+        display: initial;
+        flex-flow: column wrap;
+        width: 30vw;
+        height: 79vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+        padding: 10px;
+		border: 1px solid #D5DBDB;
+        }
+        .doc2:nth-child(2):hover{
+           box-shadow: 0px 15px 20px 0px #c32aa3; 
+        }
+		.doc3{
+		border: 2 px;
+        display: initial;
+        flex-flow: column wrap;
+        width: 30vw;
+        height: 79vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+		padding: 10px;
+		border: 1px solid #D5DBDB;
+		
+        }
+        .doc3:nth-child(3):hover{
+           box-shadow: 0px 15px 20px 0px #DFDF0F; 
+        }
+        .label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+        }
+        input,label {
+            margin: .4rem 0;
+        }
+        .label1 {
+        display: inline;
+        font: 1rem 'Fira Sans', sans-serif;
+        }
+        input,label {
+            margin: .9rem 0;
+        }
+        
+        
+      .f{
+            background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;
+        }
+       
+        .icono1{
+            width: 55px;
+            height: 55px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono1:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #1877f2;
+        }
+        .fa-facebook-f{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #1877f2);
+        }
+        /*instagram*/
+        .f2{
+            background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;    
+        }
+       
+        .icono2{
+            width: 65px;
+            height: 65px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono2:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #c32aa3;
+        }
+        .fa-instagram{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #c32aa3);
+        }
+        /*twitter*/
+        .f3{
+           background: #FFFFFF;
+            background-color: #000000;
+            padding: 10px;
+            margin: 10px;
+
+            /* IMPORTANTE */
+            display: inline-block;
+        }
+       
+        .icono3{
+            width: 65px;
+            height: 65px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all .2s;
+        }
+        .icono3:nth-child(1):hover{
+            box-shadow: 0px 10px 10px #DFDF0F;
+        }
+        .fa-twitter{
+            color: #FFFFFF;
+            filter: drop-shadow(10px 10px 10px #DFDF0F);
+        }
+        
+        .boton {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+        }
+        .boton:nth-child(3):hover{
+           box-shadow: 10px 10px 10px 10px #DFDF0F; 
+        }
+		.m{
+           display: none; 
+		
+        }
+		.bot1:nth-child(1n+1):hover{
+           box-shadow: 0px 0px 10px 10px #DFDF0F; 
+        }
+		.bot1{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot2:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #1877f2; 
+        }
+		.bot2{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+       .bot3:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #FFFFFF; 
+        }
+		.bot3{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot4:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #52F914; 
+        }
+		.bot4{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot5:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #14F9F5; 
+        }
+		.bot5{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot6:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot6{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot7:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #DFDF0F; 
+        }
+		.bot7{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot8:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #DFDF0F; 
+        }
+		.bot8{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot9:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #DFDF0F; 
+        }
+		.bot9{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+        .pini:nth-child(1n):hover{
+		
+		   color: #060008;
+            filter: drop-shadow(25px 25px 25px #060008);
+		   
+		   
+        }
+		
+       </style>
+	   
+	    <script>
+        function myFunction() {
+		var x = document.getElementById("myDIV");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction1() {
+		var x = document.getElementById("myDIV1");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction2() {
+		var x = document.getElementById("myDIV2");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction3() {
+		var x = document.getElementById("myDIV3");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction4() {
+		var x = document.getElementById("myDIV4");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction5() {
+		var x = document.getElementById("myDIV5");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction6() {
+		var x = document.getElementById("myDIV6");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction7() {
+		var x = document.getElementById("myDIV7");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction8() {
+		var x = document.getElementById("myDIV8");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+    </script>
+    </head>
+
+    <body >
+       <P align="center" class="pini" style="font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">BIENVENIDO A SU BIBILIOTECA</P>
+	   
+             <div aling = "center" class="doc"  >
+			 			 
+                  <div class="doc1"> 
+					<h1 align="center" class="c" style="  font-weight: bold; font-size: 42px; color: #FFFFFF ; font-family: TATTI;">Administrar Usuarios</h1> 				  
+						<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot1" onclick="myFunction() ">Eliminar</button>
+					 <div class="m" id="myDIV" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					Este elemento aparece y desaparece con el botón
+					</div>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot2" onclick="myFunction1()">Insertar</button>
+					 <div class="m" id="myDIV1" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					Este elemento aparece y desaparece con el botón
+					</div>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot3" onclick="myFunction2()">Actualizar</button>
+					 <div class="m" id="myDIV2" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					Este elemento aparece y desaparece con el botón
+					</div>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot4" onclick="myFunction3()">Buscar</button>
+					 <div class="m" id="myDIV3" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					Este elemento aparece y desaparece con el botón
+					</div>
+					
+					
+					
+					
+																	
+                      
+                 </div>
+				 
+                 
+                 <div class="doc2" id="doc2">
+                    <h1 align="center" class="c" style="  font-weight: bold; font-size: 42px; color: #FFFFFF ; font-family: TATTI;">Administrar Contenidos</h1> 				  
+						<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot5" onclick="myFunction4() ">LIBROS</button>
+					 <div class="m" id="myDIV4" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					<button class="bot5">Eliminar</button>
+					<button class="bot5">Insertar</button>
+					<button class="bot5">Actualizar</button>
+					<button class="bot5">Buscar</button>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot6" onclick="myFunction5()">REVISTAS</button>
+					 <div class="m" id="myDIV5" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					<button class="bot6">Eliminar</button>
+					<button class="bot6">Insertar</button>
+					<button class="bot6">Actualizar</button>
+					<button class="bot6">Buscar</button>
+					</div>
+                         
+                 </div>
+				 
+				  <div class="doc3" id="doc3">
+                     
+                    <h1 align="center" class="c" style="  font-weight: bold; font-size: 42px; color: #FFFFFF ; font-family: TATTI;">Reporte Consultas</h1> 
+					 	  
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot7" onclick="myFunction6() ">LIBROS</button>
+					 <div class="m" id="myDIV6" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					<button class="bot7">Entrada</button>
+					<button class="bot7">Prestamos</button>
+					<button class="bot7">General</button>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot8" onclick="myFunction7()">REVISTAS</button>
+					 <div class="m" id="myDIV7" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					<button class="bot8">Entrada</button>
+					<button class="bot8">Prestamos</button>
+					<button class="bot8">General</button>
+					</div> 
+					<br>
+					<br>
+					<br>
+					<br>
+					<label for="uname" style="font-weight: bold; font-size: 30px; color: #FFFFFF ;"><b> </b></label>				  
+                     <button class="bot9" onclick="myFunction8()">USUARIOS</button>
+					 <div class="m" id="myDIV8" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+					<button class="bot9">Creados</button>
+					<button class="bot9">Registrados</button>
+					<button class="bot9">General</button>
+					</div> 
+					
+                         
+                 </div>
+                     
+                 
+                 
+             </div>
+       
+
+        
+        
+    </body>
+</html>

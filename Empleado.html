@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        
+        <title>Empleado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        
+        
+        <style>
+       body {
+		background: fixed;
+        background-image:url(biblioteca.jpg); 
+		background-color:#000;
+		background-repeat: no-repeat;
+		background-size: cover;	
+        }
+		.c{
+		
+		
+		border-bottom-style:double;
+		border-bottom-color: #D5DBDB;
+		opacity: 0,9;
+		}
+        .doc{
+        display: flex;
+        flex-flow: column wrap;
+        width: 99vw;
+        height: 79vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background:  #000000;
+        opacity: 0.9;
+        
+        }
+        .doc1{
+		border: 2 px;
+        display: initial;
+        flex-flow: column wrap;
+        width: 49vw;
+        height: 89vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+		border: 1px solid #D5DBDB;
+		
+       
+        }
+       
+        .doc1:nth-child(1):hover{
+           box-shadow: 0px 15px 20px 0px #1877f2; 
+        }
+        .doc2{
+		border: 2 px;
+        display: initial;
+        flex-flow: column wrap;
+        width: 49vw;
+        height: 89vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: #D5DBDB;
+        background-color: #000000;
+        padding: 10px;
+		border: 1px solid #D5DBDB;
+        }
+        .doc2:nth-child(2):hover{
+           box-shadow: 0px 15px 20px 0px #c32aa3; 
+        }
+		
+		.img1{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img2{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img3{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img4{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img5{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img6{
+                    width: 100px;
+                    height: 110px;  
+              }
+		
+		.carousel-item:hover img {
+                  -webkit-transform:scale(1.8);
+                  transform:scale(1.8);
+                  
+                    
+              }
+                .carousel-item {
+                    overflow:hidden;
+                }
+                .img1:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+                 .img2:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+                 .img3:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+                 .img4:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+                 .img5:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+                 .img6:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #FFFFFF; 
+                 }
+				  .img7:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img8:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img9:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img10:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img11:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img12:nth-child(1):hover{
+                    box-shadow: 5px 5px 5px 0px #c32aa3; 
+                 }
+                 .img7{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img8{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img9{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img10{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img11{
+                    width: 100px;
+                    height: 110px;  
+              }
+              .img12{
+                    width: 100px;
+                    height: 110px;  
+              }
+       .c{
+		border-bottom-style:double;
+		border-bottom-color: #D5DBDB;
+		opacity: 0,9;
+		}
+		.m
+		{
+           display: none; 
+		
+        }
+		.n
+		{
+           display: none; 
+		
+        }
+		.o
+		{
+           display: none; 
+		
+        }
+		.p
+		{
+           display: none; 
+		
+        }
+		.q
+		{
+           display: none; 
+		
+        }
+		.r
+		{
+           display: none; 
+		
+        }
+		.s
+		{
+           display: none; 
+		
+        }
+		.t
+		{
+           display: none;		   
+		
+        }
+		.u
+		{
+           display: none; 
+		
+        }
+		.v
+		{
+           display: none; 
+		
+        }
+		.w
+		{
+           display: none; 
+		
+        }
+		.x
+		{
+           display: none;
+					   
+		
+        }
+		.bot1{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot1:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot2{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot2:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot3{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot3:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot4{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot4:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot5{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+		}
+		.bot5:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #CA8FE6; 
+        }
+		.bot{
+			background-color: transparent;
+            background-repeat:no-repeat;
+            border: #FFFFFF;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+			font-weight: bold; 
+			font-size: 22px; 
+			color: #FFFFFF ; 
+			font-family: TATTI;
+			
+		}
+		.bot:nth-child(1n):hover{
+           box-shadow: 0px 0px 10px 10px #DFDF0F; 
+        }
+		
+		.bot3{
+		clear:both;
+		float:left;}
+		.bot2{
+		}
+		.bot1{
+		float:right;
+		}
+		.input1{
+                     margin-right: 20px;
+                     border-left: 0;
+                     border-right: 0;
+                     border-top: 0;
+                     border-bottom: 2;
+                     border-bottom-color: #FFFFFF;
+                     color: #EEE;
+                     background-color: #000;
+                 }
+                 .select{
+                     
+                  
+                     color: sandybrown;
+                    background:transparent;
+                    border-left: 0;
+                     border-right: 0;
+                     border-top: 0;
+                     border-bottom: 2;
+                     border-bottom-color: #FFFFFF;
+                    font-size: 14px;
+                    height: 30px;
+                    padding: 5px;
+                    width: 250px;
+                    
+                    
+                  
+                 }
+                 .select:focus{ 
+                     outline: none;
+                     -webkit-appearance: button;
+                     -moz-appearance: button;
+
+                 }
+                 
+                 option { color: sandybrown; 
+                          background-color:transparent;
+                          opacity: 0,2;
+                 }
+                option:hover { 
+                    color: #000; 
+                    background-color:transparent; 
+                }
+                button {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: #FFFFFF;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+				
+            }
+            .boton:nth-child(1n):hover{
+               box-shadow: 0px 5px #FFFFFF; 
+            }
+
+		
+		
+        
+       </style>
+	   
+	  <script>
+        function myFunction() {
+		var x = document.getElementById("myDIV");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction1() {
+		var x = document.getElementById("myDIV1");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction2() {
+		var x = document.getElementById("myDIV2");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction3() {
+		var x = document.getElementById("myDIV3");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction4() {
+		var x = document.getElementById("myDIV4");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction5() {
+		var x = document.getElementById("myDIV5");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction6() {
+		var x = document.getElementById("myDIV6");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction7() {
+		var x = document.getElementById("myDIV7");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction8() {
+		var x = document.getElementById("myDIV8");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction9() {
+		var x = document.getElementById("myDIV9");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction10() {
+		var x = document.getElementById("myDIV10");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+		function myFunction11() {
+		var x = document.getElementById("myDIV11");
+		if (x.style.display === "none") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+		}
+    </script>
+    </head>
+
+    <body >
+       <P align="center" class="pini" style="font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">BIENVENIDO A SU BIBILIOTECA</P>
+	   
+            
+			 			 
+                  <div aling = "center" class="doc"  >
+			 			 
+                  <div class="doc1"> 
+					<h1 align="center" class="c" style="  font-weight: bold; font-size: 32px; color: #FFFFFF ; font-family: TATTI;">Libros en Cartelera</h1>
+					<div class="container">
+                        <div class="row">
+                            <div class="col l12 red">
+                                    <div class="carousel center-align">
+                                        <a class="carousel-item" href="#"><img class="img1" src="l1.jpg" onclick="myFunction()"></a>
+										<div class="m" id="myDIV" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img2" src="l2.jpg" onclick="myFunction1()"></a>
+										<div class="n" id="myDIV1" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot2">Eliminar</button>
+										<button class="bot2">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img3" src="l3.jpg" onclick="myFunction2()"></a>
+										<div class="o" id="myDIV2" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot3">Eliminar</button>
+										<button class="bot3">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img4"src="l4.jpg" onclick="myFunction3()"></a>
+										<div class="p" id="myDIV3" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot5">Eliminar</button>
+										<button class="bot5">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img5"src="l5.jpg" onclick="myFunction4()"></a>
+										<div class="q" id="myDIV4" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot4">Eliminar</button>
+										<button class="bot4">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img6"src="l6.jpg" onclick="myFunction5()"></a>
+										<div class="r" id="myDIV5" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot5">Eliminar</button>
+										<button class="bot5">Actualizar</button>
+										<br>
+										</div>
+
+                                    </div>
+									<br>
+									<br>
+									<div>
+										<div class="botones">
+											<button class="bot3"  >+ Añadir Libros+</button>
+											<button class="bot2" >▲Actualizar Libros▲</button>
+											<button class="bot1" >- Eliminar Libros-</button>
+										</div>
+										
+										
+									</div>
+                            </div>
+                         </div>
+                    </div>
+					<h1 align="center" class="c" style="  font-weight: bold; font-size: 32px; color: #FFFFFF ; font-family: TATTI;">Revistas en Cartelera</h1>
+					<div class="container">
+                        <div class="row">
+                            <div class="col l12 red">
+                                    <div class="carousel center-align">
+                                        <a class="carousel-item" href="#"><img class="img7" src="r1.jpg" onclick="myFunction6()"></a>
+										<div class="s" id="myDIV6" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img8" src="r2.jpg" onclick="myFunction7()"></a>
+										<div class="t" id="myDIV7" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img9" src="r3.jpg" onclick="myFunction8()"></a>
+										<div class="u" id="myDIV8" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img10"src="r4.jpg" onclick="myFunction9()"></a>
+										<div class="v" id="myDIV9" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img11"src="r5.jpg" onclick="myFunction10()"></a>
+										<div class="w" id="myDIV10" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        <a class="carousel-item" href="#"><img class="img12"src="r6.jpg" onclick="myFunction11()"></a>
+										<div class="x" id="myDIV11" style="border:1px solid black; font-weight: bold; font-size: 52px; color: #E5E8E8 ; font-family: TATTI;">
+										<br>
+										<button class="bot1">Eliminar</button>
+										<button class="bot1">Actualizar</button>
+										<br>
+										</div>
+                                        
+
+                                    </div>
+									<br>
+									<br>
+									<div>
+										<div class="botones">
+											<button class="bot3"  >+ Añadir Revistas+</button>
+											<button class="bot2" >▲Actualizar Revistas▲</button>
+											<button class="bot1" >- Eliminar Revistas-</button>
+										</div>
+										
+										
+									</div>
+									
+                            </div>
+                         </div>
+						 
+                    </div>
+					
+					
+                 </div>
+				 
+                 
+                 <div class="doc2" id="doc2">
+				 <h1 align="center" class="c" style="  font-weight: bold; font-size: 42px; color: #FFFFFF ; font-family: TATTI;">PRESTAMOS</h1>
+				 <h1 align="center" id="headline" style="font-weight: bold; font-size: 42px; color: #EEE;">Buscar Libros</h1>
+                    <div class="divw">
+                    <input class="input1"type="text" placeholder="Buscar por Titulo o Autor" name="uname" required style="WIDTH: 20%;" size="20">
+                    <label style="font-weight: bold; font-size: 19px; color: #EEE;">  Filtrar por:</label>
+                    <select name="TipoB" class="select">
+                    <option value="Tipo">Tipo</option>
+                    <option value="Autor">Articulo</option>
+                    <option value="Editorial">Editorial</option>
+                    <option value="Año">Año</option>
+                  </select>
+				   <label style="font-weight: bold; font-size: 19px; color: #EEE;">  Estado:</label><input class="input1"type="text" placeholder="Estado del Libro" name="uname" required style="WIDTH: 20%;" size="20">
+				   <br>
+				   <br>
+				   <label align="center" style="font-weight: bold; font-size: 19px; color: #EEE;">  Usuario:</label><input class="input1"type="text" placeholder="Usuario" name="uname" required style="WIDTH: 20%;" size="20">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="divb"> 
+				  <button type="submit" class="boton" style=" font-size: 20px; color: #FFFFFF; font-family: dirtyoldtown;" >Buscar</button>
+				  <button type="submit" class="boton" style=" font-size: 20px; color: #FFFFFF; font-family: dirtyoldtown;" > Prestar </a></button>
+                  </div>
+				  <br>
+				 <h1 align="center" id="headline" style="font-weight: bold; font-size: 42px; color: #EEE;">Buscar Revistas</h1>
+                    <div class="divw">
+                    <input class="input1"type="text" placeholder="Buscar por Titulo o Autor" name="uname" required style="WIDTH: 20%;" size="20">
+                    <label style="font-weight: bold; font-size: 19px; color: #EEE;">  Filtrar por:</label>
+                    <select name="TipoB" class="select">
+                    <option value="Tipo">Tipo</option>
+                    <option value="Autor">Articulo</option>
+                    <option value="Editorial">Editorial</option>
+                    <option value="Año">Año</option>
+                  </select>
+				   <label style="font-weight: bold; font-size: 19px; color: #EEE;">  Estado:</label><input class="input1"type="text" placeholder="Estado del Revistas" name="uname" required style="WIDTH: 20%;" size="20">
+                  <br>
+				   <br>
+				  </div>
+                  <br>
+                  <br>
+				  <label align="center" style="font-weight: bold; font-size: 19px; color: #EEE;">  Usuario:</label><input class="input1"type="text" placeholder="Usuario" name="uname" required style="WIDTH: 20%;" size="20">
+                  <br>
+				  <div class="divb"> 
+				  <br>
+				  <br>
+				  <button type="submit" class="boton" style=" font-size: 20px; color: #FFFFFF; font-family: dirtyoldtown;" >Buscar</button>
+				  <button type="submit" class="boton" style=" font-size: 20px; color: #FFFFFF; font-family: dirtyoldtown;" > Prestar </a></button>
+                  </div>
+				  <br>
+                  <br>                 
+					
+                 </div>
+				 
+				                       
+                 
+                 
+             </div>
+                     
+                 
+                 
+        
+       
+
+        
+        
+    </body>
+</html>
